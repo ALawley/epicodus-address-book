@@ -26,6 +26,8 @@ $("input.new-addressType").val("");
 $("input.new-street").val("");
 $("input.new-city").val("");
 $("input.new-state").val("");
+$("div.new-address").not($(".original"))
+  .remove();
 }
 
 function addAddress() {
