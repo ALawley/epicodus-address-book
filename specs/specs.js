@@ -21,6 +21,6 @@ describe('Address', function() {
   });
   it("adds the fullAddress method to all addresses", function() {
   var testAddress = new Address("Work", "123 Main St", "Test City","Test State");
-  expect(testAddress.fullAddress()).to.equal("Work", "123 Main St, Test City, Test State");
+  expect(testAddress.fullAddress()).to.equal("Work, 123 Main St, Test City, Test State");
   });
 });
