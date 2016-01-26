@@ -74,7 +74,7 @@ $(document).ready(function() {
     resetFields();
 
     $(".contact").last().click(function() {
-      $("#show-contact").show();
+      $("#show-contact").fadeIn();
       $("#show-contact h2").text(newContact.fullName());
       $(".first-name").text(newContact.firstName);
       $(".last-name").text(newContact.lastName);
@@ -83,5 +83,8 @@ $(document).ready(function() {
         $("ul#addresses").append("<li>" + address.fullAddress() + "</li>");
       });
     });
+  });
+  $(".prank").keypress(function() {
+    alert("ouch!");
   });
 });
